@@ -107,14 +107,6 @@ Developed by **Atharv Mehrotra (athm27)**
 
 Intern - Ention Technology Pvt. Ltd.
 
-Domain-Web Development, Marketing, Hardware Engineering 
-
-Mobile:- +91 6387183983
-
-Email:- atharvmehrotra@jklu.edu.in, mehrotraatharv15@gmail.com
-
-LinkedIn:- www.linkedin.com/in/atharvmehrotra27
-
 ---
 
 ## Contributors 
