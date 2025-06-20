@@ -3,6 +3,8 @@
 A modern, fully responsive web portal for individuals and professionals to express interest in associating with Ention Legal.
 
 This portal features a smooth, card-based layout built with React and Tailwind CSS, and includes a working contact form with backend email notifications via Node.js and Nodemailer.
+![Uploading image.png…]()
+
 
 ---
 
