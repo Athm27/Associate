@@ -3,7 +3,6 @@
 A modern, fully responsive web portal for individuals and professionals to express interest in associating with Ention Legal.
 
 This portal features a smooth, card-based layout built with React and Tailwind CSS, and includes a working contact form with backend email notifications via Node.js and Nodemailer.
-![Uploading image.png…]()
 
 
 ---
@@ -18,6 +17,7 @@ This portal features a smooth, card-based layout built with React and Tailwind C
 
 - **Frontend:** React.js, Tailwind CSS, PostCSS
 - **Backend:** Node.js, Express.js, Nodemailer
+- **Database:** MongoDB
 - **Deployment:** GitHub, Vercel (frontend), Render/Railway (backend)
 
 ---
@@ -103,7 +103,7 @@ Render or Railway
 
 ## 🙋 Author
 
-Developed by Atharv Mehrotra (athm27)
+Developed by **Atharv Mehrotra (athm27)**
 
 Intern - Ention Technology Pvt. Ltd.
 
@@ -117,12 +117,18 @@ LinkedIn:- www.linkedin.com/in/atharvmehrotra27
 
 ---
 
-In collaboration with Ention Technology Pvt. Ltd.
+## Contributors 
+
+Yash Mishra (yashmish18)
+
+---
+
+In collaboration with **Ention Technology Pvt. Ltd.**
 
 ---
 
 ## 📄 License
 
-All rights reserved © Ention Legal, 2025.
+All rights reserved © Ention Technology Pvt. Ltd., 2025.
 
 ---
