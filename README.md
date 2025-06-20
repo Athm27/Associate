@@ -1,122 +1,126 @@
-# Associate: Ention Legal Partnership Portal
+# ⚖️ Ention Legal – Associate With Us
 
-This is the official **Associate with Us** portal for Ention Legal, allowing individuals to submit their interest to collaborate, while showcasing key information in a clean card-based layout.
+A modern, fully responsive web portal for individuals and professionals to express interest in associating with Ention Legal.
 
----
-
-## 📁 Folder Structure
-
-/associate
-├── ention-frontend # React + Tailwind frontend (user interface)
-├── ention-backend # Node.js + Express backend (form handling + email)
-
-yaml
-Copy
-Edit
+This portal features a smooth, card-based layout built with React and Tailwind CSS, and includes a working contact form with backend email notifications via Node.js and Nodemailer.
 
 ---
 
-## 🔧 Technologies Used
+## 🌐 Live Website
 
-- Frontend: React, Tailwind CSS, PostCSS, Vite (optional)
-- Backend: Node.js, Express, Nodemailer
-- Deployment: GitHub + Vercel (for frontend)
+🔗 Coming Soon on https://ention.in
 
 ---
 
-## 🚀 How to Run the Project
+## 🚀 Technologies Used
 
-### 🔹 Frontend
+- **Frontend:** React.js, Tailwind CSS, PostCSS
+- **Backend:** Node.js, Express.js, Nodemailer
+- **Deployment:** GitHub, Vercel (frontend), Render/Railway (backend)
 
-```bash
+---
+
+## 📁 Project Structure
+
+Associate/
+
+├── ention-frontend # Frontend React app with Tailwind styling
+
+└── ention-backend # Backend Express server with email functionality
+
+
+---
+
+## 🛠️ Getting Started
+
+To run the project locally:
+
+## 1️⃣ Clone the repository
+
+
+git clone https://github.com/athm27/Associate.git
+
+cd Associate
+
+## 2️⃣ Run the Frontend
+
 cd ention-frontend
+
 npm install
+
 npm start
-🔹 Backend
-bash
-Copy
-Edit
-cd ention-backend
+
+📍 Open in browser: http://localhost:3000
+
+## 3️⃣ Run the Backend
+
+cd ../ention-backend
+
 npm install
+
 node server.js
-🐞 Issues Faced & Solutions
-❌ 1. tailwindcss not recognized or errors during init
-Problem:
-Running npx tailwindcss init -p threw "could not determine executable" or wasn't recognized.
 
-Fix:
+📍 Backend API runs at: http://localhost:5000
 
-Ensure Tailwind was installed correctly:
+## 📬 Environment Variables for Email
 
-bash
-Copy
-Edit
-npm install -D tailwindcss postcss autoprefixer
-Then run:
+Create a .env file inside ention-backend:
 
-bash
-Copy
-Edit
-npx tailwindcss init -p
-❌ 2. PostCSS plugin error in browser
-Error:
 
-rust
-Copy
-Edit
-You're trying to use `tailwindcss` directly as a PostCSS plugin.
-Fix:
-Update postcss.config.js to:
+EMAIL_USER=your-email@gmail.com
 
-js
-Copy
-Edit
-module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-};
-❌ 3. GitHub not showing ention-frontend folder
-Problem:
-GitHub treated ention-frontend as a submodule due to .git inside it.
+EMAIL_PASS=your-app-password
 
-Fix:
+These credentials are used by Nodemailer to send automated confirmation emails.
 
-bash
-Copy
-Edit
-Remove-Item -Recurse -Force ention-frontend\.git
-git rm -r --cached ention-frontend
-git add ention-frontend
-git commit -m "Fix frontend tracking"
-git push origin main
-❌ 4. Error: src refspec main does not match any
-Fix:
+---
 
-bash
-Copy
-Edit
-git branch -M main
-git push -u origin main
-❌ 5. Merge conflicts when pulling from GitHub
-Fix:
+## 🧠 Common Problems & Fixes
 
-Resolve the conflict markers (<<<<<<<, =======, >>>>>>>) manually.
+Problem	Cause	Solution
 
-Then:
+Tilwindcss not recognized	Wrong install	Reinstall Tailwind & PostCSS using official steps
+GitHub not showing frontend	.git inside ention-frontend	Delete .git inside, then re-add with git add ention-frontend
+refspec main error	Wrong branch name	Rename: git branch -M main and push again
+Merge conflict	Remote has README	Fix manually, then commit resolved file
 
-bash
-Copy
-Edit
-git add .
-git commit -m "Resolved merge conflict"
-git push
-✅ Deployment Instructions
-Push to GitHub
+---
 
-Deploy frontend on Vercel
+## 📦 Deployment
 
-Choose ention-frontend/ as root folder
+Frontend: Vercel
 
-Backend can be deployed to Railway or Render
+→ Set root as ention-frontend, auto-detects React
+
+Backend:
+Render or Railway
+
+→ Connect GitHub → Set environment variables → Deploy
+
+---
+
+## 🙋 Author
+
+Developed by Atharv Mehrotra (athm27)
+
+Intern - Ention Technology Pvt. Ltd.
+
+Domain-Web Development, Marketing, Hardware Engineering 
+
+Mobile:- +91 6387183983
+
+Email:- atharvmehrotra@jklu.edu.in, mehrotraatharv15@gmail.com
+
+LinkedIn:- www.linkedin.com/in/atharvmehrotra27
+
+---
+
+In collaboration with Ention Technology Pvt. Ltd.
+
+---
+
+## 📄 License
+
+All rights reserved © Ention Legal, 2025.
+
+---
