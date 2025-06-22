@@ -103,9 +103,18 @@ Render or Railway
 
 ## 🙋 Author
 
-Developed by **Atharv Mehrotra (athm27)**
+Developed by **Atharv Mehrotra (atharvix)** – Full-stack Developer | Project Designer
 
 Intern - Ention Technology Pvt. Ltd.
+
+📧 Email:  
+- [atharvmehrotra@jklu.edu.in](mailto:atharvmehrotra@jklu.edu.in)  
+- [mehrotraatharv15@gmail.com](mailto:mehrotraatharv15@gmail.com)
+
+🔗 LinkedIn:  
+[www.linkedin.com/in/atharvmehrotra27](https://www.linkedin.com/in/atharvmehrotra27)
+
+
 
 ---
 
