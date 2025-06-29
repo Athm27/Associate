@@ -11,13 +11,13 @@ const sendContactMail = async (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: support@entionenergy.com,
-      pass: dklldjvdgywrxnhj,
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 
   const mailOptions = {
-    from: support@entionenergy.com,
+    from: process.env.EMAIL_USER,
     to: email,
     subject: 'Thanks for contacting ENTION! 🎉',
     html: `<p>Dear ${name},</p><p>Thank you for reaching out to ENTION. Your request has been received and our team will get back to you shortly.</p><p>Regards,<br>ENTION Team</p>`
