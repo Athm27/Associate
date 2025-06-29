@@ -17,7 +17,7 @@ const sendContactMail = async (req, res) => {
   });
 
   const mailOptions = {
-    from: process.env.EMAIL_USER,
+    from: support@entionenergy.com,
     to: email,
     subject: 'Thanks for contacting ENTION! 🎉',
     html: `<p>Dear ${name},</p><p>Thank you for reaching out to ENTION. Your request has been received and our team will get back to you shortly.</p><p>Regards,<br>ENTION Team</p>`
