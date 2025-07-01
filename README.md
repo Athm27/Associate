@@ -122,6 +122,9 @@ Intern - Ention Technology Pvt. Ltd.
 
 Yash Mishra (yashmish18)
 
+Aniket Vasane
+
+
 ---
 
 In collaboration with **Ention Technology Pvt. Ltd.**
