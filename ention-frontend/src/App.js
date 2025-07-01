@@ -1,28 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import ContactForm from './components/ContactForm';
 import './index.css';
 import {
-  FaFlag, FaBolt, FaMoneyBillWave, FaLeaf, FaLightbulb, FaUsers, FaTools, FaUniversity, FaChartLine, FaBlog
+  FaChartLine, FaUsers, FaTools, FaUniversity, FaMoneyBillWave, FaLeaf, FaLightbulb, FaBlog
 } from 'react-icons/fa';
-
+import { Link } from 'react-router-dom';
 function App() {
   // Hero background image
   const heroBg = 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80';
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-b from-[#070D2A] via-[#133B5C] to-[#0FAFCA]">
-      {/* Hero Section */}
       <section className="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
         <img src={heroBg} alt="Laptop Hero" className="absolute inset-0 w-full h-full object-cover object-center opacity-60" />
         <div className="absolute inset-0 bg-gradient-to-br from-[#070D2A]/90 via-[#133B5C]/80 to-[#0FAFCA]/70" />
         <div className="relative z-10 flex flex-col items-center text-center px-4">
           <h1 className="text-5xl md:text-6xl font-extrabold text-white drop-shadow mb-4 animate-fade-in">Welcome to ENTION</h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-cyan-200 mb-4 animate-fade-in delay-100">Empowering Innovation, Affordability & Sustainability</h2>
-          <p className="text-lg md:text-xl text-white/90 mb-6 max-w-2xl animate-fade-in delay-200">We design state-of-the-art laptops for startups, academia, and professionals. Join us in building a technology ecosystem that inspires growth.</p>
-          <a href="#offers" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition animate-fade-in delay-300">Explore Our Offers</a>
+          <p className="text-lg md:text-xl text-white/90 mb-6 max-w-2xl animate-fade-in delay-200">We design state-of-the-art laptops for startups, academia, and professionals.</p>
+          <Link to="/about" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition animate-fade-in delay-300">Associate With Us</Link>
         </div>
       </section>
-
       {/* Our Offers Section */}
       <section id="offers" className="max-w-6xl mx-auto py-20 px-4">
         <h2 className="text-4xl font-extrabold text-center text-white mb-12">Our Offers</h2>

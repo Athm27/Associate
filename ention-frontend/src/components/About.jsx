@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
@@ -13,8 +14,8 @@ export default function About() {
           />
           <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-start p-10">
             <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-2">Associate With Us</h1>
-            <p className="text-white text-lg mb-4 max-w-md">ENTION laptops are designed for diverse needs, from investors to universities. Discover solutions tailored for you.</p>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded shadow">Discover Solutions</button>
+            <p className="text-white text-lg mb-4 max-w-md">ENTION laptops are designed for diverse needs. Discover solutions tailored for you.</p>
+            <Link to="/" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded shadow">Back to Home</Link>
           </div>
         </div>
       </div>

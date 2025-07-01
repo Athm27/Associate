@@ -1,12 +1,8 @@
+// components/ContactForm.jsx
 import React, { useState } from 'react';
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
   const [status, setStatus] = useState('');
 
   const handleChange = e => {
@@ -18,7 +14,7 @@ export default function ContactForm() {
     setStatus('Sending...');
 
     try {
-      const res = await fetch('http://localhost:5000/api/associate', {
+      const res = await fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/api/associate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
